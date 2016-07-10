@@ -1,0 +1,54 @@
+.out-view{
+	display: none;
+	height:0;
+}
+.in-view{
+	color:red;   
+	border:3px solid red;
+	display: block;
+	overflow:hidden;
+	width:100%;
+}
+
+@media screen and (max-width: 400px){
+	.in-view{
+		height:500px;
+	}
+}
+@media screen and (min-width: 401px){
+	.in-view{
+		height:700px;
+	}
+}
+.article_content{
+	padding-bottom: 0;
+	width:100%;
+	height:550px;
+	overflow: hidden;
+}
+.number-box-name{
+	display: flex;
+	width:100%;
+	height:auto;
+	margin-top:2rem;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:center;
+	flex-grow:1;
+}
+.number-box-name a{
+	display: inline-block;
+	width:auto;
+	height:auto;
+    font-size:1rem;
+    color:#000000;
+    text-decoration:none;
+    padding:1rem;
+    border-radius: 50%;
+    transform:all ease-in;
+    -webkit-transform:all ease-in;
+}
+.number-box-name a:hover{
+    text-decoration: underline;
+    color:red;  
+}
